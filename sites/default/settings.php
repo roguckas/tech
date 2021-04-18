@@ -780,9 +780,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'mbuikus',
-  'username' => 'root',
-  'password' => 'root',
+  'database' => 'u948715845_tech',
+  'username' => 'u948715845_tech',
+  'password' => 'd7ePu9rfhg4BaVE',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
