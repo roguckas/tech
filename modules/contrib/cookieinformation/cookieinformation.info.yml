@@ -1,0 +1,12 @@
+name: Cookie Information
+type: module
+description: Integration cookie consent popup from Cookieinformation.com.
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Cookie Information
+configure: cookieinformation.settings
+
+# Information added by Drupal.org packaging script on 2020-05-19
+version: '8.x-1.0'
+project: 'cookieinformation'
+datestamp: 1589890862

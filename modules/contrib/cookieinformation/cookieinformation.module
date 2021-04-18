@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Module file for cookieinformation.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ *  Implements hook_help().
+ */
+function cookieinformation_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name !== 'help.page.cookieinformation') {
+    return;
+  }
+  $links = [
+    ':cookieinformation_website' => 'https://cookieinformation.com',
+    ':project_page' => 'https://drupal.org/project/cookieinformation',
+  ];
+  $output = '';
+  $output .= '<h3>' . t('About') . '</h3>';
+  $output .= '<p>' . t('The Cookie Information module provides a simple way of adding the Cookie Information consent popup to any Drupal site with an active Cookie Information subscription. See the <a href=":cookieinformation_website">Cookie Information website</a> for general information about Cookie Information. For more module help, see the <a href=":project_page">module project page</a>.', $links) . '</p>';
+  return $output;
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function cookieinformation_page_attachments_alter(array &$page) {
+  $config = \Drupal::config('cookieinformation.settings');
+  $languageService = \Drupal::service('cookieinformation.language_service');
+  $visibilityService = \Drupal::service('cookieinformation.visibility_service');
+
+  if (!$visibilityService->checkAll()) {
+    return;
+  }
+
+  $cookie_popup = [
+    '#type' => 'html_tag',
+    '#tag' => 'script',
+    '#attributes' => [
+      'type' => 'text/javascript',
+      'id' => 'CookieConsent',
+      'src' => 'https://policy.app.cookieinformation.com/uc.js',
+      'data-culture' => $languageService->getId(),
+      'data-iab-enabled' => $config->get('enable_iab') ? TRUE : FALSE,
+    ],
+  ];
+  $page['#attached']['html_head'][] = [$cookie_popup, 'cookieinformation.ucjs'];
+}
