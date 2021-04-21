@@ -429,6 +429,10 @@ h3 {
   display: inline-block;
 }
 
+.feed-icons {
+  display: none;
+}
+
 @media (max-width: 768px) {
   header {
     position: fixed;
