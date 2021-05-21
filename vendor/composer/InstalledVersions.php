@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'a0573b32cedcf704eb0341635787f35653700dd5',
+    'reference' => '04fea5591318e3fcb7396aa93bf71b8077807bd2',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -771,6 +771,15 @@ private static $installed = array (
         0 => '9.1.7',
       ),
     ),
+    'drupal/honeypot' => 
+    array (
+      'pretty_version' => '2.0.1',
+      'version' => '2.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.1',
+    ),
     'drupal/image' => 
     array (
       'replaced' => 
@@ -820,7 +829,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'a0573b32cedcf704eb0341635787f35653700dd5',
+      'reference' => '04fea5591318e3fcb7396aa93bf71b8077807bd2',
     ),
     'drupal/link' => 
     array (
