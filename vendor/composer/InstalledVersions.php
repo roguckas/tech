@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '04fea5591318e3fcb7396aa93bf71b8077807bd2',
+    'reference' => 'c1eb5f0ec28befa845d07f41f05d5076fc2c5eb4',
     'name' => 'drupal/legacy-project',
   ),
   'versions' => 
@@ -316,6 +316,15 @@ private static $installed = array (
       array (
         0 => '9.1.7',
       ),
+    ),
+    'drupal/checklistapi' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.0',
     ),
     'drupal/ckeditor' => 
     array (
@@ -829,7 +838,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '04fea5591318e3fcb7396aa93bf71b8077807bd2',
+      'reference' => 'c1eb5f0ec28befa845d07f41f05d5076fc2c5eb4',
     ),
     'drupal/link' => 
     array (
@@ -1002,6 +1011,15 @@ private static $installed = array (
       array (
         0 => '9.1.7',
       ),
+    ),
+    'drupal/seo_checklist' => 
+    array (
+      'pretty_version' => '5.0.0',
+      'version' => '5.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5.0.0',
     ),
     'drupal/serialization' => 
     array (
