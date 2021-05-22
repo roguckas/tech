@@ -18,6 +18,7 @@
         "composer/installers": "^1.9",
         "drupal/address": "^1.9",
         "drupal/anchor_link": "~2.0",
+        "drupal/checklistapi": "^2.0",
         "drupal/cookieinformation": "^1.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
