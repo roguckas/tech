@@ -436,6 +436,11 @@ h3 {
 
 .article-teaser .field--type-text-with-summary {
   margin-bottom: 24px;
+  .links li a {
+    text-decoration: underline;
+    padding: 0;
+
+  }
 }
 
 @media (max-width: 768px) {
