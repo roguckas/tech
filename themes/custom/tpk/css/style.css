@@ -395,6 +395,10 @@ h3 {
   display: none;
 }
 
+.article-teaser .field--type-text-with-summary {
+  margin-bottom: 24px;
+}
+
 @media (max-width: 768px) {
   header {
     position: fixed;
